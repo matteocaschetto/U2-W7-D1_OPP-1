@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>U2-W7-D1_OPP1</title>
+  </head>
+  <body>
+    <h1>Creazione Animali Domestici</h1>
+
+    <div class="form-container">
+      <form id="petForm">
+        <label for="petName">Nome dell'Animale:</label>
+        <input type="text" id="petName" required /><br />
+
+        <label for="ownerName">Nome del Padrone:</label>
+        <input type="text" id="ownerName" required /><br />
+
+        <label for="species">Specie:</label>
+        <select id="species" required>
+          <option value="cane">Cane</option>
+          <option value="gatto">Gatto</option>
+          <option value="coniglio">Coniglio</option>
+          <option value="uccello">Uccello</option>
+          <option value="pesce">Pesce</option></select
+        ><br />
+
+        <label for="breed">Razza:</label>
+        <input type="text" id="breed" required /><br />
+
+        <button type="submit">Aggiungi Animale</button>
+      </form>
+    </div>
+
+    <h2>Lista degli Animali</h2>
+    <ul id="petList"></ul>
+    <script src="index.js"></script>
+  </body>
+</html>
